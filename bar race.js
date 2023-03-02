@@ -119,10 +119,15 @@ function getSubtitle() {
             text: 'World Industrial roudwood Production by Country',
             align: 'left'
         },
-         subtitle: {
-    align: 'left',
-    text: 'Click the columns to view producion trends in the past years(flags). Other forest product charts: <a href="Linegraph.html">Graph 1</a>'
-  },
+    subtitle: {
+            useHTML: true,
+            text: getSubtitle(),
+            floating: true,
+            align: 'right',
+            verticalAlign: 'middle',
+            y: -20,
+            x: -100
+        },
          accessibility: {
     announceNewData: {
       enabled: true
