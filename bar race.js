@@ -119,7 +119,7 @@ function getSubtitle() {
             text: 'World Industrial roudwood Production by Country',
             align: 'left'
         },
-    subtitle: {
+        subtitle: {
             useHTML: true,
             text: getSubtitle(),
             floating: true,
