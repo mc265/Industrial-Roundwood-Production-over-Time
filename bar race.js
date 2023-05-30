@@ -104,7 +104,7 @@ function getSubtitle() {
 (async () => {
 
     dataset = await fetch(
-        'https://raw.githubusercontent.com/mc265/data/main/Production%20race%20with%20Russia%20USSR%20(1).json'
+        'https://raw.githubusercontent.com/mc265/data/main/data%20without%20USSR.json'
     ).then(response => response.json());
 
 
