@@ -89,7 +89,7 @@ function getData(year) {
             return [countryName, Number(countryData[year])];
         })
         .sort((a, b) => b[1] - a[1]);
-    return [output[0], output.slice(1, nbr)];
+    return [output[0], output.slice(0, nbr)];
 }
 
 function getSubtitle() {
@@ -104,16 +104,18 @@ function getSubtitle() {
 (async () => {
 
     dataset = await fetch(
-        'https://raw.githubusercontent.com/mc265/data/main/data%20without%20USSR.json'
+        'https://raw.githubusercontent.com/mc265/data/main/Production%20race%20with%20Russia%20USSR%20(3).json'
     ).then(response => response.json());
 
 
     chart = Highcharts.chart('container', {
         chart: {
-            animation: {
+            animation:
+            {
                 duration: 500
             },
-            marginRight: 50
+
+            marginRight: 0
         },
         title: {
             text: 'Industrial Roundwood production by country',
@@ -132,10 +134,14 @@ function getSubtitle() {
         legend: {
             enabled: false
         },
-        xAxis: {
-            type: 'category'
+        xAxis: { title: {
+            enabled: true,
+            text: 'Country'
         },
-     
+       
+            type: 'category' 
+         },      
+      
 
         yAxis: {
             opposite: true,
@@ -169,6 +175,7 @@ function getSubtitle() {
                 type: 'bar',
                 name: startYear,
                 data: getData(startYear)[1]
+               
             }
         ],
          credits: {
@@ -181,7 +188,7 @@ function getSubtitle() {
         responsive: {
             rules: [{
                 condition: {
-                    maxWidth: 550
+                    maxWidth: 0
                 },
                 chartOptions: {
                     xAxis: {
