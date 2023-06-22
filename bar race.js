@@ -141,14 +141,14 @@ function getSubtitle() {
          },  
      
 
-        yAxis: {
+     yAxis: {
             opposite: true,
             tickPixelInterval: 150,
             min:0,
             max:300000000,
             tickInterval: 50000000,
             title: {
-                text: null
+                text: 'Production(m3)'
             }
         },
         plotOptions: {
