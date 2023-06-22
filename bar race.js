@@ -126,7 +126,7 @@ function getSubtitle() {
             align: 'right',
             verticalAlign: 'middle',
             y: 50,
-            x: -100
+            x: -50
         },
 
         legend: {
