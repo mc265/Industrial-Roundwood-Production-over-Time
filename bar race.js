@@ -110,12 +110,10 @@ function getSubtitle() {
 
     chart = Highcharts.chart('container', {
         chart: {
-            animation:
-            {
+            animation: {
                 duration: 500
             },
-
-            marginRight: 0
+            marginRight: 50
         },
         title: {
             text: 'Industrial Roundwood production by country',
@@ -127,32 +125,35 @@ function getSubtitle() {
             floating: true,
             align: 'right',
             verticalAlign: 'middle',
-            y: -20,
+            y: 50,
             x: -100
         },
 
         legend: {
             enabled: false
         },
-        xAxis: { title: {
+ xAxis: { title: {
             enabled: true,
             text: 'Country'
         },
        
             type: 'category' 
-         },      
-      
+         },  
+     
 
         yAxis: {
             opposite: true,
             tickPixelInterval: 150,
+            min:0,
+            max:300000000,
+            tickInterval: 50000000,
             title: {
                 text: null
             }
         },
         plotOptions: {
             series: {
-                animation: true,
+                animation: false,
                 groupPadding: 0,
                 pointPadding: 0.1,
                 borderWidth: 0,
@@ -167,15 +168,14 @@ function getSubtitle() {
                 }
             }
         },
-        
-        
-      
+       
+       
+     
         series: [
             {
                 type: 'bar',
                 name: startYear,
                 data: getData(startYear)[1]
-               
             }
         ],
          credits: {
@@ -188,7 +188,7 @@ function getSubtitle() {
         responsive: {
             rules: [{
                 condition: {
-                    maxWidth: 0
+                    maxWidth: 550
                 },
                 chartOptions: {
                     xAxis: {
@@ -284,4 +284,3 @@ btn.addEventListener('click', function () {
 input.addEventListener('click', function () {
     update();
 });
-             
