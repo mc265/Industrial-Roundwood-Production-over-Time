@@ -93,7 +93,7 @@ function getData(year) {
 }
 
 function getSubtitle() {
-    const production = (getData(input.value)[0][1] / 1).toFixed(0);
+    const population = (getData(input.value)[0][1] / 1).toFixed(0);
     return `<span style="font-size: 80px">${input.value}</span>
         <br>
         <span style="font-size: 22px">
