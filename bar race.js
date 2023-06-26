@@ -93,7 +93,7 @@ function getData(year) {
 }
 
 function getSubtitle() {
-    const population = (getData(input.value)[0][1] / 1).toFixed(0);
+    const production = (getData(input.value)[0][1] / 1).toFixed(0);
     return `<span style="font-size: 80px">${input.value}</span>
         <br>
         <span style="font-size: 22px">
@@ -104,7 +104,7 @@ function getSubtitle() {
 (async () => {
 
     dataset = await fetch(
-        'https://raw.githubusercontent.com/mc265/data/main/Production%20race%20with%20Russia%20USSR%20final.json'
+        'https://raw.githubusercontent.com/mc265/Industrial-Roundwood-Production-over-Time/main/Production%20race%20with%20Russia%20USSR%20final.json'
     ).then(response => response.json());
 
 
