@@ -126,7 +126,7 @@ function getSubtitle() {
             align: 'right',
             verticalAlign: 'middle',
             y: 50,
-            x: -50
+            x: -100
         },
 
         legend: {
@@ -141,7 +141,7 @@ function getSubtitle() {
          },  
      
 
-     yAxis: {
+        yAxis: {
             opposite: true,
             tickPixelInterval: 150,
             min:0,
@@ -284,3 +284,4 @@ btn.addEventListener('click', function () {
 input.addEventListener('click', function () {
     update();
 });
+
