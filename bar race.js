@@ -116,7 +116,7 @@ function getSubtitle() {
             marginRight: 50
         },
         title: {
-            text: 'Industrial Roundwood production by country',
+            text: '  Bar chart showing the world industrial roundwood production by country from 1961 to 2021. Press the play button at top left to watch these values change over time.  Press pause to focus on any particular year.',
             align: 'left'
         },
         subtitle: {
@@ -134,7 +134,7 @@ function getSubtitle() {
         },
  xAxis: { title: {
             enabled: true,
-            text: 'Country'
+            text: ''
         },
        
             type: 'category' 
@@ -284,4 +284,3 @@ btn.addEventListener('click', function () {
 input.addEventListener('click', function () {
     update();
 });
-
