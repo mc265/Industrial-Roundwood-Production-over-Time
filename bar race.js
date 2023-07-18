@@ -97,7 +97,7 @@ function getSubtitle() {
     return `<span style="font-size: 80px">${input.value}</span>
         <br>
         <span style="font-size: 22px">
-            Total: <b>: ${population}</b>m3
+            Total<b>: ${population}</b>m3
         </span>`;
 }
 
