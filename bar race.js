@@ -104,7 +104,7 @@ function getSubtitle() {
 (async () => {
 
     dataset = await fetch(
-        'https://raw.githubusercontent.com/mc265/Industrial-Roundwood-Production-over-Time/main/data%20for%20bar%20race.json'
+        'https://raw.githubusercontent.com/mc265/Industrial-Roundwood-Production-over-Time/main/bar%20race%20data%20new%20update.json'
     ).then(response => response.json());
 
 
