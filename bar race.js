@@ -1,5 +1,5 @@
 const startYear = 1961,
-    endYear = 2021,
+    endYear = 2022,
     btn = document.getElementById('play-pause-button'),
     input = document.getElementById('play-range'),
     nbr = 20;
